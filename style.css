@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:fuchsia;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .profile {
+    background-color: #e3f2fd;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .toggle-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links.active {
+    display: block;
+  }
+  
+  /* Profile Section */
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #e3f2fd;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid fuchsia;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    color: fuchsia;
+    border-bottom: 2px solid fuchsia;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  section ul,
+  section ol {
+    margin: 1rem 0;
+    padding: 0 1.5rem;
+  }
+  
+  section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  body.dark .navbar {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  body.dark .profile {
+    background-color: #1e1e1e;
+  }
+  
+  body.dark a {
+    color: fuchsia;
+  }
+  
+  .theme-btn {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  body.dark .theme-btn {
+    color: #f1f1f1;
+  }
+  
+  /* Default <hr> Style */
+  hr {
+    border: none;
+    height: 2px;
+    margin: 2rem 0;
+    background: linear-gradient(to right, fuchsia, transparent);
+    border-radius: 1px;
+  }
+  
+  /* Dark Mode <hr> Style */
+  body.dark hr {
+    background: linear-gradient(to right, fuchsia, #333);
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar .toggle-btn {
+      display: block;
+    }
+  
+    .navbar .nav-links {
+      flex-direction: column;
+      display: none;
+    }
+  }
